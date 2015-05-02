@@ -98,7 +98,7 @@
 
 - (void)setBadge:(NSString *)badge{
     self.badgeLabel.text = badge;
-    self.badgeLabel.hidden = !badge && [badge isEqualToString:@""];
+    self.badgeLabel.hidden = !badge || [badge isEqualToString:@""];
 }
 
 - (NSMutableDictionary *)titleForState{
