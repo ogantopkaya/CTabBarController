@@ -37,7 +37,7 @@
 -(void)configure{
     [self removeAllSubviews];
 
-    self.backgroundColor = [UIColor clearColor];
+//    self.backgroundColor = [UIColor clearColor];
     
     self.bottomBarContainer = [[UIView alloc] initWithFrame:CGRectZero];
     self.bottomBarContainer.backgroundColor = [UIColor colorWithWhite:0.96 alpha:0.4];
