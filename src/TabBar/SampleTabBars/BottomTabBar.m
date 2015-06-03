@@ -47,7 +47,7 @@
     self.seperatorView.backgroundColor = self.tabBarSeperatorColor ? self.tabBarSeperatorColor : [UIColor colorWithWhite:0.93 alpha:1.0];
     [self.bottomBarContainer addSubview:self.seperatorView];
     
-    if ([UIVisualEffect class]) {
+    if (self.hasBlurEffect && self.hasBlurEffect.boolValue && [UIVisualEffect class]) {
         self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
         [self.bottomBarContainer addSubview:self.visualEffectView];
     }
