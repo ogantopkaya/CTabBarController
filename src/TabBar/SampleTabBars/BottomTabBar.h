@@ -12,5 +12,7 @@
 @interface BottomTabBar : UIView<CTabBar>
 
 @property(nonatomic)CGFloat tabBarHeight;
+@property(nonatomic,strong)UIColor *tabBarBackgroundColor;
+@property(nonatomic,strong)UIColor *tabBarSeperatorColor;
 
 @end

@@ -37,14 +37,14 @@
 -(void)configure{
     [self removeAllSubviews];
 
-//    self.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];
     
     self.bottomBarContainer = [[UIView alloc] initWithFrame:CGRectZero];
-    self.bottomBarContainer.backgroundColor = [UIColor colorWithWhite:0.96 alpha:0.4];
+    self.bottomBarContainer.backgroundColor = self.tabBarBackgroundColor ? self.tabBarBackgroundColor : [UIColor colorWithWhite:0.96 alpha:0.4];
     [self addSubview:self.bottomBarContainer];
     
     self.seperatorView = [[UIView alloc] initWithFrame:CGRectZero];
-    self.seperatorView.backgroundColor = [UIColor colorWithWhite:0.93 alpha:1.0];
+    self.seperatorView.backgroundColor = self.tabBarSeperatorColor ? self.tabBarSeperatorColor : [UIColor colorWithWhite:0.93 alpha:1.0];
     [self.bottomBarContainer addSubview:self.seperatorView];
     
     if ([UIVisualEffect class]) {
