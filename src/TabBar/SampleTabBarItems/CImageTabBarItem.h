@@ -10,6 +10,9 @@
 
 @interface CImageTabBarItemView : UIView<CTabBarItemView>
 
+@property(nonatomic,strong,readonly)UIImageView *imageView;
+@property(nonatomic,strong,readonly)UILabel *titleLabel;
+
 - (void)setTitle:(NSString *)title image:(UIImage*)image titleColor:(UIColor *)titleColor forState:(CTabBarItemState)state;
 
 @end
