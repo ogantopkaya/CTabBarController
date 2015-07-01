@@ -79,6 +79,9 @@
 
 - (void)cTabBar:(id<CTabBar>)cTabBar didSelectItemAtIndex:(NSInteger)index{
     [self setSelectedIndex:index];
+    if ([self.delegate respondsToSelector:@selector(cTabBarController:didSelectItemAtIndex:)]) {
+        [self.delegate cTabBarController:self didSelectItemAtIndex:index];
+    }
 }
 
 #pragma mark - TabBar 
