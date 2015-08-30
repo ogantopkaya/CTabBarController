@@ -26,7 +26,14 @@
                 return tabBarItem;
             }
         }
-        nextResponder = [nextResponder nextResponder];
+        
+        id next = [nextResponder nextResponder];
+        if (!next && [nextResponder isKindOfClass:[UIViewController class]]) {
+            next = [nextResponder navigationController];
+        }
+        
+        nextResponder = next;
+        
     } while (nextResponder);
     
     return nil;
