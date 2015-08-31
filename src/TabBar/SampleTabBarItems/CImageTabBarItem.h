@@ -12,6 +12,7 @@
 
 @property(nonatomic,strong,readonly)UIImageView *imageView;
 @property(nonatomic,strong,readonly)UILabel *titleLabel;
+@property(nonatomic,strong,readonly)UILabel *badgeLabel;
 
 - (void)setTitle:(NSString *)title image:(UIImage*)image titleColor:(UIColor *)titleColor forState:(CTabBarItemState)state;
 
