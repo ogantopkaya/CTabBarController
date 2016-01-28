@@ -20,7 +20,7 @@
 @interface CTabBarController : UIViewController
 
 - (instancetype)initWithTabBar:(UIView <CTabBar>*)cTabBar;
-
+@property(nonatomic,strong,readonly)UIView <CTabBar> *cTabBar;
 @property(nonatomic,assign)id<CTabBarControllerDelegate>delegate;
 @property(nonatomic,strong)NSArray *viewControllers;
 @property(nonatomic,strong)UIViewController *selectedViewController;
